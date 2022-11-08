@@ -86,8 +86,9 @@ cores = [
 ]
 
 def malioc(shader, core)
-  FileUtils.mkdir_p("doc/#{core}")
-  sh "malioc -c #{core} -o doc/#{core}/#{shader}.txt shaders/#{shader}"
+  dir = File.extname(shader).gsub(".", "")
+  FileUtils.mkdir_p("reports/#{core}/#{dir}")
+  sh "malioc -c #{core} -o reports/#{core}/#{dir}/#{shader}.txt shaders/#{shader}"
 end
 
 task :generate_reports => [:clean] do
@@ -99,5 +100,5 @@ task :generate_reports => [:clean] do
 end
 
 task :clean do
-  FileUtils.rm_r("doc", :force => true)
+  FileUtils.rm_r("reports", :force => true)
 end
