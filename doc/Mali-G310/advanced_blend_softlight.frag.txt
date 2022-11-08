@@ -1,0 +1,45 @@
+Mali Offline Compiler v7.7.0 (Build d01859)
+Copyright (c) 2007-2022 Arm Limited. All rights reserved.
+
+Configuration
+=============
+
+Hardware: Mali-G310 r0p0
+Architecture: Valhall
+Driver: r39p0-00rel0
+Shader type: OpenGL ES Fragment
+
+Compiler messages
+=================
+
+INFO: Mali-G310 reports assume a 32 FMA/cycle and 4 Texture op/cycle core configuration.
+      Other core configurations might have 16-64 FMA/cycle and 2-8 Texture op/cycle.
+
+Main shader
+===========
+
+Work registers: 32 (100% used at 100% occupancy)
+Uniform registers: 16 (25% used)
+Stack spilling: false
+16-bit arithmetic: 0%
+
+                                A      LS       V       T    Bound
+Total instruction cycles:    2.10    0.00    0.50    0.50        A
+Shortest path cycles:        1.69    0.00    0.25    0.00        A
+Longest path cycles:         2.02    0.00    0.50    0.50        A
+
+A = Arithmetic, LS = Load/Store, V = Varying, T = Texture
+
+Shader properties
+=================
+
+Has uniform computation: true
+Has side-effects: false
+Modifies coverage: false
+Uses late ZS test: false
+Uses late ZS update: false
+Reads color buffer: false
+
+Note: This tool shows only the shader-visible property state.
+API configuration may also impact the value of some properties.
+

@@ -1,0 +1,25 @@
+Mali Offline Compiler v7.7.0 (Build d01859)
+Copyright (c) 2007-2022 Arm Limited. All rights reserved.
+
+Configuration
+=============
+
+Hardware: Mali-T720 r1p1
+Architecture: Midgard
+Driver: r23p0-00rel0
+Shader type: OpenGL ES Vertex
+
+Main shader
+===========
+
+Work registers: 3 (75% used at 100% occupancy)
+Uniform registers: 5 (23% used)
+Stack spilling: false
+
+                                A      LS       T    Bound
+Total instruction cycles:   10.00   12.00    0.00       LS
+Shortest path cycles:        8.25   12.00    0.00       LS
+Longest path cycles:         8.25   12.00    0.00       LS
+
+A = Arithmetic, LS = Load/Store, T = Texture
+

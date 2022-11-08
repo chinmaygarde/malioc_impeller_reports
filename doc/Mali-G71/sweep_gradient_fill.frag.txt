@@ -1,0 +1,39 @@
+Mali Offline Compiler v7.7.0 (Build d01859)
+Copyright (c) 2007-2022 Arm Limited. All rights reserved.
+
+Configuration
+=============
+
+Hardware: Mali-G71 r0p1
+Architecture: Bifrost
+Driver: r39p0-00rel0
+Shader type: OpenGL ES Fragment
+
+Main shader
+===========
+
+Work registers: 24 (75% used at 100% occupancy)
+Uniform registers: 26 (40% used)
+Stack spilling: false
+16-bit arithmetic: 0%
+
+                                A      LS       V       T    Bound
+Total instruction cycles:    4.07    0.00    0.50    1.00        A
+Shortest path cycles:        2.67    0.00    0.50    0.00        A
+Longest path cycles:         3.83    0.00    0.50    1.00        A
+
+A = Arithmetic, LS = Load/Store, V = Varying, T = Texture
+
+Shader properties
+=================
+
+Has uniform computation: true
+Has side-effects: false
+Modifies coverage: false
+Uses late ZS test: false
+Uses late ZS update: false
+Reads color buffer: false
+
+Note: This tool shows only the shader-visible property state.
+API configuration may also impact the value of some properties.
+

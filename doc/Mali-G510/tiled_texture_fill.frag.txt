@@ -1,0 +1,45 @@
+Mali Offline Compiler v7.7.0 (Build d01859)
+Copyright (c) 2007-2022 Arm Limited. All rights reserved.
+
+Configuration
+=============
+
+Hardware: Mali-G510 r0p0
+Architecture: Valhall
+Driver: r39p0-00rel0
+Shader type: OpenGL ES Fragment
+
+Compiler messages
+=================
+
+INFO: Mali-G510 reports assume a 48 FMA/cycle and 8 Texture op/cycle core configuration.
+      Other core configurations might have 48-64 FMA/cycle and 4-8 Texture op/cycle.
+
+Main shader
+===========
+
+Work registers: 20 (62% used at 100% occupancy)
+Uniform registers: 8 (12% used)
+Stack spilling: false
+16-bit arithmetic: 0%
+
+                                A      LS       V       T    Bound
+Total instruction cycles:    0.62    0.00    0.12    0.12        A
+Shortest path cycles:        0.14    0.00    0.12    0.00        A
+Longest path cycles:         0.50    0.00    0.12    0.12        A
+
+A = Arithmetic, LS = Load/Store, V = Varying, T = Texture
+
+Shader properties
+=================
+
+Has uniform computation: true
+Has side-effects: false
+Modifies coverage: false
+Uses late ZS test: false
+Uses late ZS update: false
+Reads color buffer: false
+
+Note: This tool shows only the shader-visible property state.
+API configuration may also impact the value of some properties.
+
